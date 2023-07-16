@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de tabelas grandes</title>
     <style>
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.perigo {
+            
+            color: red;
 
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            font-variant: small-caps;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -21,6 +53,7 @@
 
         ANATOMIA DE TABELAS GRANDES
         TABLE
+
             THEAD
                 TR, TD, TH
             TBODY
@@ -31,67 +64,69 @@
     -->
 
     <table>
+        <caption> População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th> São Paulo</th>
-                <th class="num">44.420.459</th>
+                <td class="perigo"> São Paulo</td>
+                <td class="num">44.420.459</td>
             </tr>
 
             <tr>
-                <th>Minas Gerais</th>
-                <th class="num">20.538.718</th>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
             </tr>
             
             <tr>
-                <th>Rio de Janeiro</th>
-                <th class="num">16.054.524</th>
+                <td class="perigo">Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
             </tr>
 
             <tr>
-                <th>Bahia</th>
-                <th class="num">14.136.417</th>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
             </tr>
 
             <tr>
-                <th>Paraná</th>
-                <th class="num">11.443.208</th>
+                <td>Paraná</td>
+                <td class="num">11.443.208</td>
             </tr>
 
             <tr>
-                <th>Rio Grande do Sul</th>
-                <th class="num">10.880.506</th>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
             </tr>
 
             <tr>
-                <th>Pernambuco</th>
-                <th class="num">9.058.155</th>
+                <td class="perigo">Pernambuco</td>
+                <td class="num">9.058.155</td>
             </tr>
 
             <tr>
-                <th>Ceará</th>
-                <th class="num">8.791.688</th>
+                <td>Ceará</td>
+                <td class="num">8.791.688</td>
             </tr>
 
             <tr>
-                <th>Pará</th>
-                <th class="num">8.116.132</th>
+                <td>Pará</td>
+                <td class="num">8.116.132</td>
             </tr>
 
             <tr>
-                <th>Santa Catarina</th>
-                <th class="num">7.609.601</th>
+                <td>Santa Catarina</td>
+                <td class="num">7.609.601</td>
             </tr>
         </tbody>
 
         <tfoot>
-
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>151.049.408</strong></td>
         </tfoot>
     </table>
 </body>
