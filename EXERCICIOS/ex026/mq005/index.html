@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos omnis rerum similique ratione cupiditate, culpa reprehenderit eaque perspiciatis iure veniam eligendi saepe pariatur ducimus veritatis repellendus maxime natus at fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio non id enim dolorem sit nam maxime tempora voluptatum modi, harum sunt eveniet doloribus nostrum dolore. Corrupti id dolores dolore?</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque omnis iusto a, voluptates accusantium consequatur dicta dolorum voluptate dolore perspiciatis. Earum et maiores necessitatibus iusto natus eaque sunt tenetur ea!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dolor impedit maiores quisquam quibusdam expedita excepturi sint porro, repellendus reprehenderit voluptas nam dolore suscipit aliquam, laboriosam ut, itaque autem iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quis corrupti explicabo vero, accusamus eligendi culpa tempore excepturi aperiam et, ipsam, magni hic quam quisquam suscipit exercitationem recusandae maxime sunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem sit incidunt, quis sunt libero cupiditate quia, fuga magnam laborum necessitatibus eligendi excepturi ab. Aliquam ipsa corrupti aliquid fugiat officia? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quis accusamus delectus laudantium consequatur perspiciatis porro, iste odio pariatur temporibus veritatis, maxime tenetur, quaerat non accusantium sequi. Labore, maiores accusantium.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque officia quod quam. Quam autem officiis laboriosam natus veniam suscipit facilis magni, maxime reiciendis nihil enim exercitationem aliquid totam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores fugiat atque magni quo deleniti ipsam, laudantium molestiae tenetur aperiam sequi nam dolorem, consequuntur nisi animi possimus ipsa quas earum?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }            
+        }
+    </script>
+</body>
+</html>
